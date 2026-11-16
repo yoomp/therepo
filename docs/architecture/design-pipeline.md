@@ -1,5 +1,5 @@
 # Pipeline Architecture Diagram
-
+```mermaid
 
   CSV[CSV source data] --> |Data validation / ingestion fields| CSVBronze[CSV Bronze layer]
   CSVBronze --> |Standardising e.g. formats, units, naming conventions, data types etc.| CSVSilver[CSV Silver layer]
@@ -25,3 +25,5 @@
   JSONGold --> Datamart[Datamart]
   TextGold --> Datamart[Datamart]
   ExcelGold --> Datamart[Datamart]
+
+```
